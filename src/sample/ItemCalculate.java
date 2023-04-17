@@ -2,9 +2,11 @@ package sample;
 
 public class ItemCalculate {
     public static void main(String[] args) {
-        int price = 5;
-        int amount = 10;
-        System.out.println(price * amount);
         
+        int price = 110;
+        int amount = 3;
+        price -= 10;
+        price *= amount;
+        System.out.println(price);
     }
 }
