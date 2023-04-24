@@ -1,6 +1,6 @@
 package sample;
 
-public class Mondai {
+public class mondai {
     public static void main(String[] args) {
         int age = 18;
         boolean hasBankaccount = false;
