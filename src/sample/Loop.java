@@ -1,16 +1,23 @@
 package sample;
 
+import java.util.Arrays;
 import java.util.Map;
 
 public class Loop {
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            System.out.println("hello " + i);
+        
+        String[] drinks = {"コーヒー","お茶"};
+        for (int i = 0; i < drinks.length; i++) {
+            System.out.println(drinks[i]);
         }
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                System.out.println(("("+i+","+j+")"));
-            }
+        for (String drink : drinks) {
+            System.out.println(drink);
         }
+        
+        int i = 0; 
+        while (i <= 10) {
+            i++;
+        }
+        System.out.println(i);
     }
 }
