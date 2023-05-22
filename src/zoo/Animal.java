@@ -1,9 +1,13 @@
 package zoo;
 
 public class Animal {
-    String type;
-    String name;
-
+    public String type;
+    public String name;
+    
+    public Animal(String name) {
+        this.name = name;
+        System.out.println(this.name);
+    }
     public void cry(String oto){
         System.out.println(name + " sua "+ oto);
     }
