@@ -1,6 +1,8 @@
 package rpg;
 
-public class Character {
+import rpg.items.Item;
+
+public class Character implements ICharacter {
 
     public String name;
     public String job;
@@ -53,6 +55,24 @@ public class Character {
         System.out.println("Damage: " + damage);
         System.out.println(monter.name + " Defense: -" + this.attackPower);
         System.out.println(monter.name + " HP: " + monter.hp);
+    }
+
+    @Override
+    public boolean isAlive() {
+        return (this.hp > 0);
+    }
+
+    @Override
+    public void magic(Monter monter, String key) {
+        if (this.mp > 0){
+            System.out.println("magic actack");
+        }
+    }
+
+    @Override
+    public void equip(Item item) {
+        this.attackPower += item.actackPower;
+        this.defensePower += item.defencePower;
     }
 
 }
