@@ -7,4 +7,6 @@ public interface ICharacter {
     public boolean isAlive();
     public void magic(Monter monter, String key);
     public void equip (Item item);
+    public void hello(Item item);
+    
 }

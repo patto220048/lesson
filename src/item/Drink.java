@@ -1,5 +1,9 @@
 package item;
 
+import payment.Card;
+
 public class Drink {
-   ToDo todo;
+   Drink(Card card){
+      
+   }
 }

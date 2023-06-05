@@ -75,4 +75,10 @@ public class Character implements ICharacter {
         this.defensePower += item.defencePower;
     }
 
+    @Override
+    public void hello(Item item) {
+       System.out.println( this.name + " " + item.name);
+    }
+    
+
 }
